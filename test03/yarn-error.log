@@ -1,0 +1,52 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\503\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add moprgan cookie-parser express-session dotenv
+
+PATH: 
+  C:\Program Files\jdk-11_0_2\bin;C:\WINDOWS;C:\WINDOWS\system32;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Bandizip\;C:\Program Files\Git\cmd;C:\Program Files\PuTTY\;C:\Program Files\nodejs\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\503\AppData\Local\Microsoft\WindowsApps;C:\Users\503\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\503\AppData\Local\gitkraken\bin;C:\Users\503\AppData\Roaming\npm
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.16.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/moprgan: Not found
+      at params.callback [as _callback] (C:\Users\503\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:66145:18)
+      at self.callback (C:\Users\503\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:140890:22)
+      at Request.emit (node:events:513:28)
+      at Request.<anonymous> (C:\Users\503\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141862:10)
+      at Request.emit (node:events:513:28)
+      at IncomingMessage.<anonymous> (C:\Users\503\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141784:12)
+      at Object.onceWrapper (node:events:627:28)
+      at IncomingMessage.emit (node:events:525:35)
+      at endReadableNT (node:internal/streams/readable:1359:12)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+npm manifest: 
+  {
+      "name": "test03",
+      "version": "0.0.1",
+      "description": "익스프레스를 배우자",
+      "main": "app.js",
+      "scripts": {
+          "start": "nodemon app"
+      },
+      "author": "kbs",
+      "license": "MIT",
+      "devDependencies": {
+          "nodemon": "^3.0.1"
+      },
+      "dependencies": {
+          "express": "^4.18.2"
+      }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
