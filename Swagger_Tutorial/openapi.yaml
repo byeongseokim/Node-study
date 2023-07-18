@@ -1,0 +1,71 @@
+---
+openapi: 3.0.0
+info:
+  title: API_Example
+  description: Swagger 실습을 위한 API Example
+  version: 1.0.0-oas3
+servers:
+- url: https://virtserver.swaggerhub.com/KBS970318/API_Example/1.0.0
+  description: SwaggerHub API Auto Mocking
+- url: https://jsonplaceholder.typicode.com
+  description: JSON Placehoder API
+- url: https://www.google.com
+  description: Google API
+paths:
+  /todos/{id}:
+    get:
+      summary: Return a user by ID
+      parameters:
+      - name: id
+        in: path
+        description: The ID of the user to return
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: integer
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200'
+  /complete/search:
+    get:
+      summary: 자동완성 검색 결과를 반환합니다.
+      parameters:
+      - name: q
+        in: query
+        required: false
+        style: form
+        explode: true
+        schema:
+          type: string
+      - name: client
+        in: query
+        required: false
+        style: form
+        explode: true
+        schema:
+          type: string
+      responses:
+        "200":
+          description: A Text File
+          content:
+            text/plain:
+              schema:
+                type: string
+components:
+  schemas:
+    inline_response_200:
+      type: object
+      properties:
+        userId:
+          type: integer
+        id:
+          type: integer
+        title:
+          type: string
+        completed:
+          type: boolean
